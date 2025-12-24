@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026 화천산천어축제 투어</title>
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Gungsuh', '궁서', 'AppleMyungjo', serif;
+            background: radial-gradient(circle at center, #1a2a6c, #b21f1f, #fdbb2d);
+            background-attachment: fixed;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 550px;
+            background: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(10px);
+            border: 2px solid #00d2ff;
+            border-radius: 0px; /* 파격적인 직각 디자인 */
+            padding: 40px;
+            box-shadow: 0 0 30px rgba(0, 210, 255, 0.5);
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 1px double #00d2ff;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+        }
+
+        .badge {
+            display: inline-block;
+            border: 1px solid #00d2ff;
+            color: #00d2ff;
+            padding: 2px 10px;
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #fff;
+            text-shadow: 3px 3px 0px #b21f1f, 6px 6px 0px #1a2a6c;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: #00d2ff;
+        }
+
+        .info-section {
+            margin-bottom: 40px;
+        }
+
+        .info-box {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 20px;
+            border-left: 5px solid #00d2ff;
+            margin-bottom: 15px;
+        }
+
+        .info-box h2 {
+            font-size: 0.9rem;
+            color: #888;
+            margin-bottom: 5px;
+            font-weight:bold;
+        }
+
+        .info-box p {
+            font-size: 1.4rem;
+            word-break: keep-all;
+        }
+
+        /* 아코디언 스타일 */
+        .accordion-item {
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            margin-bottom: 10px;
+        }
+
+        .accordion-header {
+            width: 100%;
+            background: none;
+            border: none;
+            color: #fff;
+            padding: 15px;
+            text-align: left;
+            font-size: 1.3rem;
+            font-family: inherit;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background 0.3s;
+        }
+
+        .accordion-header:hover {
+            background: rgba(0, 210, 255, 0.1);
+        }
+
+        .accordion-header::after {
+            content: '▼';
+            font-size: 0.8rem;
+            transition: transform 0.3s;
+        }
+
+        .accordion-header.active::after {
+            transform: rotate(180deg);
+        }
+
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease;
+            background: rgba(255, 255, 255, 0.03);
+        }
+
+        .accordion-content p {
+            padding: 20px;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #ddd;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.8rem;
+            letter-spacing: 5px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <div class="badge">제 1 회</div>
+            <h1>화천산천어축제</h1>
+            <p class="subtitle">얼지 않은 인정, 녹지 않는 추억<br>끼없는 모임</p>
+        </header>
+
+        <section class="info-section">
+            <div class="info-box">
+                <h2>일시</h2>
+                <p>2026년 1월 24일 토요일</p>
+            </div>
+            <div class="info-box">
+                <h2>이동방법</h2>
+                <p>각 차량 탑승 후 화천산천어축제장 도착</p>
+            </div>
+        </section>
+
+        <section class="accordion-container">
+            <div class="accordion-item">
+                <button class="accordion-header">축제 상세 안내</button>
+                <div class="accordion-content">
+                    <p>세계 4대 겨울 축제로 꼽히는 화천산천어축제는 맑은 화천천의 두꺼운 얼음을 깨고 산천어를 낚는 특별한 경험을 제공합니다.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-header">참여 프로그램</button>
+                <div class="accordion-content">
+                    <p>- 산천어 얼음낚시 및 맨손잡기<br>- 눈썰매 및 봅슬레이 체험<br>- 세계최대 실내얼음조각광장 관람</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-header">개인 준비물</button>
+                <div class="accordion-content">
+                    <p>방한복, 털모자, 장갑, 핫팩은 필수입니다. 낚시 도구는 현장에서 구매 또는 대여가 가능</p>
+                </div>
+            </div>
+              <div class="accordion-item">
+                <button class="accordion-header">신청방법</button>
+                <div class="accordion-content">
+                    <p>톡게시판 투표하거나 <br>보살이한테 문의</p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            HWACHEON 2026
+        </footer>
+    </div>
+
+    <script>
+       
+        document.querySelectorAll('.accordion-header').forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+
+
+                button.classList.toggle('active');
+
+                if (button.classList.contains('active')) {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                } else {
+                    content.style.maxHeight = null;
+                }
+            });
+        });
+    </script>
+</body>
+</html>
